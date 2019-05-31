@@ -183,37 +183,101 @@ body, a, h1, h2, h3, span, p, button {
   font-weight: bold;
 }
 
+.athleths, .players {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+@media (min-width: 641px) {
+  .athleths {
+    align-items: flex-end;
+  }
+  .players {
+    align-items: flex-start;
+  }
+}
+
 .section-title {
   font-size: 28px;
   font-weight: bold;
   line-height: 35px;
-  /*letter-spacing: 50%;*/
   color: #e7e7e7;
   text-transform: uppercase;
   margin-left: 20px;
+}
 
+@media (max-width: 640px) {
+  .athleths .section-title,
+  .players .section-title {
+    margin-bottom: 240px;
+  }
+}
+
+
+@media (min-width: 641px) {
+  .section-title {
+    width: 50%;
+  }
+}
+
+@media (min-width: 641px) {
+  .post {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .athleths .post {
+    align-items: flex-end;
+  }
+
+  .players .post {
+    align-items: flex-start;
+  }
+
+  .wrapper-article-title, .text {
+    width: 50%;
+  }
 }
 
 .preview {
-  position: relative;
+  position: absolute;
   background-size: auto;
   background-repeat: no-repeat;
   background-position: center center;
   z-index: 2;
-  margin-bottom: -55px;
 }
 
+@media (min-width: 641px) {
+  .athlets-section {
+    align-self: flex-start;
+  }
+
+  .players-section {
+    align-self: flex-end;
+  }
+}
+
+@media (max-width: 640px) {
+  .preview {
+    align-self: center;
+    top: 70px;
+  }
+}
 
 @media (max-width: 640px) {
   .athlets-section {
       height: 281px;
+      width: 192px;
       background-image: url(img/footballer_192.png);
   }
 }
 
 @media (min-width: 641px) and (max-width: 960px) {
   .athlets-section {
-     height: 697px;
+     height: 699px;
+     width: 497px;
      background-image: url(img/footballer_497.png);
   }
 }
@@ -221,6 +285,7 @@ body, a, h1, h2, h3, span, p, button {
 @media (min-width: 961px) and (max-width: 1920px) {
   .athlets-section {
      height: 908px;
+     width: 566px;
      background-image: url(img/footballer_566.png);
   }
 }
@@ -228,6 +293,7 @@ body, a, h1, h2, h3, span, p, button {
 @media (max-width: 640px) {
   .players-section  {
     height: 248px;
+    width: 302px;
     background-image: url(img/basketballer_302.png);
   }
 }
@@ -235,6 +301,7 @@ body, a, h1, h2, h3, span, p, button {
 @media (min-width: 641px) and (max-width: 960px) {
   .players-section {
      height: 565px;
+     width: 436px;
      background-image: url(img/basketballer_436.png);
   }
 }
@@ -242,6 +309,7 @@ body, a, h1, h2, h3, span, p, button {
 @media (min-width: 961px) and (max-width: 1920px) {
   .players-section {
       height: 815px;
+      width: 991px;
       background-image: url(img/basketballer_991.png);
   }
 }
@@ -251,14 +319,6 @@ body, a, h1, h2, h3, span, p, button {
     margin-top: 25px;
   }
 }
-
-@media (min-width: 961px) and (max-width: 1920px) {
-  .athleths {
-    /*display: flex;*/
-    /*flex-direction: column;*/
-  }
-}
-
 
 .article-title {
   font-size: 23px;
@@ -448,6 +508,7 @@ img {
 .wrapper-footer-icon {
   width: 136px;
   height: 36px;
+  margin-top: 350px;
 }
 
 .footer-logo {
