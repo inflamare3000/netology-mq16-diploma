@@ -374,13 +374,20 @@ body, a, h1, h2, h3, span, p, button {
   padding-left: 20px;
 }
 
+@media (max-width: 640px) {
+  .post-connection {
+    background-color: #fafafa;
+  }
+}
+@media (min-width: 641px) {
+  .post-connection {
+    background-color: #ffffff;
+  }
+}
 
-.post-connection {
-  background-color: #fafafa;
-  padding-top: 83px;
-  /*padding-right: 20px;*/
-  /*padding-left: 20px;*/
-  padding-bottom: 50px;
+  .post-connection {
+    padding-top: 83px;
+    padding-bottom: 50px;
 }
 
 .post-collaboration {
@@ -396,8 +403,12 @@ body, a, h1, h2, h3, span, p, button {
   padding-bottom: 56px;
  }
 
-.be-active_preview {
-  max-width: 100%;
+@media (max-width: 960px) {
+  .be-active_preview,
+  .find-contact_preview,
+  .work-it_preview {
+     max-width: 100%;
+  }
 }
 
 .be-active-title,
@@ -405,6 +416,38 @@ body, a, h1, h2, h3, span, p, button {
 .work-it-title {
   margin-top: 35px;
 }
+
+@media (min-width: 961px) {
+  .be-active_preview,
+  .find-contact_preview,
+  .work-it_preview {
+    width: 50%;
+  }
+
+  .wrapper-be-active,
+  .wrapper-find-contact,
+  .wrapper-work-it {
+    display: flex;
+    flex-direction: column;
+  }
+
+   .wrapper-be-active,
+   .wrapper-work-it {
+     align-items: flex-end;
+   }
+
+   .wrapper-find-contact {
+     align-items: flex-start;
+   }
+
+}
+
+
+
+
+
+
+
 
 img {
   width: 100%;
@@ -428,21 +471,22 @@ img {
   color: #f5f6f7;
 }
 
-.text-be-active,
-.text-find-contact,
-.text-work-it {
-  padding-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 80px;
+@media (max-width: 640px) {
+  .text {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 80px;
+  }
+
+  .text-be-active {
+    padding-right: 92px;
+  }
+
+  .text-work-it {
+    padding-bottom: 68px;
+  }
 }
 
-.text-work-it {
-  padding-bottom: 68px;
-}
-
-.text-be-active {
-  padding-right: 92px;
-}
 
 .main-footer {
   display: flex;
@@ -452,14 +496,13 @@ img {
   background-color: #000000;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 }
 
 @media (max-width: 640px) {
   .main-footer {
     background-image: url(img/game_767.jpg);
-    height: 979px;
+    height: 568px;
   }
 }
 
@@ -476,9 +519,6 @@ img {
     height: 960px;
   }
 }
-
-
-
 
 .main-footer::after {
   content: "";
@@ -508,7 +548,6 @@ img {
 .wrapper-footer-icon {
   width: 136px;
   height: 36px;
-  margin-top: 350px;
 }
 
 .footer-logo {
