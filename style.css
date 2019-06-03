@@ -84,7 +84,7 @@ body, a, h1, h2, h3, span, p, button {
 
 .header-title {
   position: relative;
-  font-size: 28px;
+  /*font-size: 28px;*/
   font-weight: bold;
   text-transform: uppercase;
   color: #ffffff;
@@ -95,15 +95,30 @@ body, a, h1, h2, h3, span, p, button {
   width: 80%
 }
 
-@media (min-width: 641px) {
-  .header-title {
-    font-size: 64px;
+@media (max-width: 640px) {
+  .main-header {
+    font-size: 8px;
   }
 }
 
+.header-title {
+  font-size: 3.5em;
+}
+
+
+@media (min-width: 641px) {
+  .main-header {
+    font-size: 18px;
+  }
+
+  /*.header-title {*/
+    /*!*font-size: 64px;*!*/
+  /*}*/
+/*}*/
+
 @media (min-width: 961px) {
-  .header-title {
-    font-size: 90px;
+  .main-header {
+    font-size: 26px;
   }
 }
 
@@ -120,14 +135,6 @@ body, a, h1, h2, h3, span, p, button {
   z-index: 2;
   margin-top: 88px;
 }
-
-@media (min-width: 641px) {
-  .buttons {
-    display: flex;
-    justify-content: center;
-  }
-}
-
 .download {
   display: flex;
   align-items: center;
@@ -139,20 +146,32 @@ body, a, h1, h2, h3, span, p, button {
   border-radius: 50px;
   background-color: #5e42b0;
   color: #ffffff;
-  font-size: 8px;
+  font-size: 1em;
   text-align: left;
 }
 
 @media (max-width: 640px) {
+  .buttons {
+    font-size: 8px;
+  }
   .download {
     margin-right: auto;
     margin-left: auto;
     width: 280px;
     height: 35px;
   }
+}
 
-  .appstore {
-    margin-bottom: 14px;
+@media (min-width: 641px) {
+  .buttons {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+  }
+}
+
+.appstore {
+  margin-bottom: 14px;
   }
 }
 
@@ -162,8 +181,8 @@ body, a, h1, h2, h3, span, p, button {
     height: 77px;
   }
 
-  .appstore {
-    margin-right: 14px;
+.appstore {
+  margin-right: 14px;
   }
 }
 
