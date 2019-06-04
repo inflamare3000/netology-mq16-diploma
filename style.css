@@ -21,6 +21,15 @@ body, a, h1, h2, h3, span, p, button {
   font-family: "Open Sans", Arial, sans-serif;
 }
 
+@media (min-width: 961px) and (max-width: 1920px) {
+  .page {
+    /*max-width: 1920px;*/
+    /*margin-right: auto;*/
+    /*margin-left: auto;*/
+  }
+}
+
+
 .main-header {
   position: relative;
   background-image: url(img/football_767.jpg);
@@ -30,13 +39,13 @@ body, a, h1, h2, h3, span, p, button {
 }
 
 
-@media (max-width: 640px) {
+/*@media (max-width: 640px) {*/
   .main-header {
     background-image: url(img/football_767.jpg);
     min-height: 568px;
     padding-top: 20px;
   }
-}
+/*}*/
 
 @media (min-width: 641px) and (max-width: 960px) {
   .main-header {
@@ -81,10 +90,8 @@ body, a, h1, h2, h3, span, p, button {
   fill: #ffffff;
 }
 
-
 .header-title {
   position: relative;
-  /*font-size: 28px;*/
   font-weight: bold;
   text-transform: uppercase;
   color: #ffffff;
@@ -106,15 +113,11 @@ body, a, h1, h2, h3, span, p, button {
 }
 
 
-@media (min-width: 641px) {
+@media (min-width: 641px) and (max-width: 960px) {
   .main-header {
     font-size: 18px;
   }
-
-  /*.header-title {*/
-    /*!*font-size: 64px;*!*/
-  /*}*/
-/*}*/
+}
 
 @media (min-width: 961px) {
   .main-header {
@@ -135,6 +138,7 @@ body, a, h1, h2, h3, span, p, button {
   z-index: 2;
   margin-top: 88px;
 }
+
 .download {
   display: flex;
   align-items: center;
@@ -154,6 +158,7 @@ body, a, h1, h2, h3, span, p, button {
   .buttons {
     font-size: 8px;
   }
+
   .download {
     margin-right: auto;
     margin-left: auto;
@@ -172,7 +177,6 @@ body, a, h1, h2, h3, span, p, button {
 
 .appstore {
   margin-bottom: 14px;
-  }
 }
 
 @media (min-width: 641px) {
@@ -181,8 +185,8 @@ body, a, h1, h2, h3, span, p, button {
     height: 77px;
   }
 
-.appstore {
-  margin-right: 14px;
+  .appstore {
+    margin-right: 14px;
   }
 }
 
@@ -217,6 +221,7 @@ body, a, h1, h2, h3, span, p, button {
   display: flex;
   flex-direction: column;
   position: relative;
+  font-size: 10px;
 }
 
 @media (min-width: 641px) {
@@ -230,7 +235,7 @@ body, a, h1, h2, h3, span, p, button {
 }
 
 .section-title {
-  font-size: 28px;
+  font-size: 5em;
   font-weight: bold;
   color: #e7e7e7;
   text-transform: uppercase;
@@ -244,10 +249,17 @@ body, a, h1, h2, h3, span, p, button {
   }
 }
 
+.be-active,
+.find-contact,
+.work-it {
+  font-size: 10px;
+}
+
 @media (min-width: 641px) {
-  .section-title {
-    font-size: 80px;
+  .athleths, .players {
+    font-size: 16px;
   }
+
   .section-title-athleths {
     width: 64%;
     box-sizing: border-box;
@@ -258,8 +270,8 @@ body, a, h1, h2, h3, span, p, button {
     flex-direction: column;
     width: 100%;
     box-sizing: border-box;
-    font-size: 80px;
   }
+
 
   .athleths .post {
     align-items: flex-end;
@@ -414,7 +426,7 @@ body, a, h1, h2, h3, span, p, button {
 }
 
 .text {
-  font-size: 15px;
+  /*font-size: 15px;*/
   font-weight: normal;
   line-height: 18px;
 }
@@ -422,6 +434,27 @@ body, a, h1, h2, h3, span, p, button {
 .post {
   padding-right: 20px;
   padding-left: 20px;
+  font-size: 10px;
+}
+
+.article-title {
+  font-size: 2.3em;
+}
+
+.text {
+  font-size: 1.5em;
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .post {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 961px) and (max-width: 1920px) {
+  .post {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -454,6 +487,23 @@ body, a, h1, h2, h3, span, p, button {
   padding-bottom: 56px;
 }
 
+.wrapper-article-title {
+  font-size: 10px;
+}
+
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .wrapper-article-title {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 961px) and (max-width: 1920px) {
+  .wrapper-article-title {
+    font-size: 16px;
+  }
+}
+
 @media (max-width: 960px) {
   .be-active_preview,
   .find-contact_preview,
@@ -469,12 +519,21 @@ body, a, h1, h2, h3, span, p, button {
   margin-top: 35px;
 }
 
+@media (min-width: 641px) and (max-width: 960px) {
+  .wrapper-be-active,
+  .wrapper-find-contact,
+  .wrapper-work-it {
+    font-size: 11px;
+  }
+}
+
 @media (min-width: 961px) {
   .wrapper-be-active,
   .wrapper-find-contact,
   .wrapper-work-it {
     display: flex;
     flex-direction: column;
+    font-size: 13px;
   }
 
   .wrapper-be-active1,
@@ -520,7 +579,7 @@ img {
   }
 }
 
-@media (min-width: 641px) and (max-width: 960px){
+@media (min-width: 641px) and (max-width: 960px) {
   .rectangle {
     width: 116px;
     height: 116px;
@@ -529,7 +588,7 @@ img {
   }
 }
 
-@media (min-width: 961px){
+@media (min-width: 961px) {
   .rectangle {
     width: 155px;
     height: 155px;
@@ -545,6 +604,7 @@ img {
   .find-contact,
   .work-it {
     display: flex;
+    font-size: 16px;
   }
 
   .find-contact {
@@ -555,6 +615,14 @@ img {
   .wrapper-find-contact,
   .wrapper-work-it {
     width: 50%;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .be-active,
+  .find-contact,
+  .work-it {
+    font-size: 16px;
   }
 }
 
@@ -590,6 +658,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 30px;
+  font-size: 8px;
 }
 
 @media (max-width: 640px) {
@@ -603,6 +672,7 @@ img {
   .main-footer {
     background-image: url(img/game_1280.jpg);
     height: 979px;
+    font-size: 20px;
   }
 }
 
@@ -610,6 +680,7 @@ img {
   .main-footer {
     background-image: url(img/game_1920.jpg);
     height: 960px;
+    font-size: 20px;
   }
 }
 
@@ -638,6 +709,10 @@ img {
   margin-left: auto;
 }
 
+.footer-buttons {
+  margin-bottom: 90px;
+}
+
 .wrapper-footer-icon {
   width: 136px;
   height: 36px;
@@ -656,7 +731,7 @@ img {
 
 .footer-title {
   position: relative;
-  font-size: 32px;
+  font-size: 4em;
   font-weight: bold;
   color: #ffffff;
   text-transform: uppercase;
@@ -668,7 +743,7 @@ img {
 
 .footer-tagline {
   position: relative;
-  font-size: 14px;
+  font-size: 1.8em;
   font-weight: normal;
   text-transform: uppercase;
   color: #9b8ec1;
@@ -677,6 +752,22 @@ img {
   margin-top: 13px;
 }
 
+@media (max-width: 960px ) {
+  .footer-tagline {
+    font-size: 1.8em;
+  }
+}
+
+@media (min-width: 961px) {
+  .footer-tagline {
+    font-size: 1.5em;
+ }
+  .footer-buttons {
+    margin-bottom: 360px;
+ }
+}
+
+
 .footer-icon-text {
   display: block;
   fill: #ffffff;
@@ -684,7 +775,7 @@ img {
   z-index: 2;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 80px;
-  margin-bottom: 10px;
+  /*margin-top: 80px;*/
+  /*margin-bottom: 10px;*/
 }
 
