@@ -38,14 +38,12 @@ body, a, h1, h2, h3, span, p, button {
   background-size: cover;
 }
 
+.main-header {
+  background-image: url(img/football_767.jpg);
+  min-height: 568px;
+  padding-top: 20px;
+}
 
-/*@media (max-width: 640px) {*/
-  .main-header {
-    background-image: url(img/football_767.jpg);
-    min-height: 568px;
-    padding-top: 20px;
-  }
-/*}*/
 
 @media (min-width: 641px) and (max-width: 960px) {
   .main-header {
@@ -102,6 +100,27 @@ body, a, h1, h2, h3, span, p, button {
   width: 80%
 }
 
+
+.header-title-play {
+  display: block;
+  text-align: right;
+}
+
+.header-title-play {
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+@media (min-width: 961px) {
+  .header-title {
+    letter-spacing: 3.5px;
+  }
+
+  .header-title-play {
+    margin-top: 25px;
+  }
+}
+
 @media (max-width: 640px) {
   .main-header {
     font-size: 8px;
@@ -117,6 +136,11 @@ body, a, h1, h2, h3, span, p, button {
   .main-header {
     font-size: 18px;
   }
+
+  .header-title-play {
+    text-align: left;
+    margin-left: 105px;
+  }
 }
 
 @media (min-width: 961px) {
@@ -125,13 +149,7 @@ body, a, h1, h2, h3, span, p, button {
   }
 }
 
-.header-title-part_one {
-  text-align: left;
-}
 
-.header-title-part_two {
-  text-align: right;
-}
 
 .buttons {
   position: relative;
@@ -152,6 +170,7 @@ body, a, h1, h2, h3, span, p, button {
   color: #ffffff;
   font-size: 1em;
   text-align: left;
+  width: 112px;
 }
 
 @media (max-width: 640px) {
@@ -193,6 +212,7 @@ body, a, h1, h2, h3, span, p, button {
 .apple-icon {
   width: 20px;
   height: 25px;
+  margin-right: 11px;
   fill: #ffffff;
   flex-shrink: 0;
 }
@@ -200,20 +220,23 @@ body, a, h1, h2, h3, span, p, button {
 .googleplay-icon {
   width: 22px;
   height: 24px;
+  margin-right: 9px;
   fill: #ffffff;
 }
 
-.button-description {
-  display: flex;
-  width: 112px;
-}
-
 .button-description-text {
-  margin-left: 9px;
+  width: 78px;
   text-transform: uppercase;
 }
 
+@media (min-width: 641px) {
+  .button-description-text {
+    width: 137px;
+  }
+}
+
 .store-name {
+  display: block;
   font-weight: bold;
 }
 
@@ -246,6 +269,7 @@ body, a, h1, h2, h3, span, p, button {
   .athleths .section-title,
   .players .section-title {
     margin-bottom: 240px;
+    padding-top: 25px;
   }
 }
 
@@ -297,11 +321,8 @@ body, a, h1, h2, h3, span, p, button {
 
 .preview {
   position: absolute;
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: center center;
-  z-index: 2;
 }
+
 
 @media (min-width: 641px) {
   .athlets-section {
@@ -320,67 +341,11 @@ body, a, h1, h2, h3, span, p, button {
   }
 }
 
-@media (max-width: 640px) {
-  .athlets-section {
-    height: 100%;
-    width: 100%;
-    background-image: url(img/footballer_192.png);
-    background-position: center top;
-  }
-}
-
-@media (min-width: 641px) and (max-width: 960px) {
-  .athlets-section {
-    height: 100%;
-    width: 100%;
-    background-image: url(img/footballer_497.png);
-    background-position-x: -130px;
-    background-size: 419px 590px;
-  }
-}
-
-@media (min-width: 961px) {
-  .athlets-section {
-    height: 100%;
-    width: 100%;
-    background-image: url(img/footballer_566.png);
-    background-position-x: -130px;
-    background-size: 566px 908px;
-  }
-}
-
-@media (max-width: 640px) {
-  .players-section {
-    height: 100%;
-    width: 100%;
-    background-image: url(img/basketballer_302.png);
-    background-position: center top;
-  }
-}
-
-@media (min-width: 641px) and (max-width: 960px) {
-  .players-section {
-    height: 100%;
-    width: 100%;
-    background-image: url(img/basketballer_436.png);
-    background-size: 399px 517px;
-    background-position: right 25px;
-  }
-}
-
-@media (min-width: 961px) and (max-width: 1920px) {
-  .players-section {
-    height: 100%;
-    width: 100%;
-    background-image: url(img/basketballer_991.png);
-  }
-}
-
-@media (max-width: 640px) {
-  .section-title {
-    margin-top: 25px;
-  }
-}
+/*@media (max-width: 640px) {*/
+/*  .section-title {*/
+/*    margin-top: 25px;*/
+/*  }*/
+/*}*/
 
 .article-title {
   font-size: 23px;
@@ -451,7 +416,7 @@ body, a, h1, h2, h3, span, p, button {
   }
 }
 
-@media (min-width: 961px) and (max-width: 1920px) {
+@media (min-width: 961px) {
   .post {
     font-size: 13px;
   }
@@ -498,7 +463,7 @@ body, a, h1, h2, h3, span, p, button {
   }
 }
 
-@media (min-width: 961px) and (max-width: 1920px) {
+@media (min-width: 961px) {
   .wrapper-article-title {
     font-size: 16px;
   }
@@ -552,6 +517,12 @@ body, a, h1, h2, h3, span, p, button {
     margin-right: 20px;
   }
 
+  .be-active_preview,
+  .find-contact_preview,
+  .work-it_preview {
+    width: 100%;
+  }
+
   .wrapper-be-active,
   .wrapper-find-contact,
   .wrapper-work-it {
@@ -559,9 +530,6 @@ body, a, h1, h2, h3, span, p, button {
   }
 }
 
-img {
-  width: 100%;
-}
 
 .rectangle {
   display: flex;
@@ -659,6 +627,7 @@ img {
   background-size: cover;
   padding-bottom: 30px;
   font-size: 8px;
+  padding-top: 90px;
 }
 
 @media (max-width: 640px) {
@@ -673,14 +642,16 @@ img {
     background-image: url(img/game_1280.jpg);
     height: 979px;
     font-size: 20px;
+    padding-top: 125px;
   }
 }
 
-@media (min-width: 961px) and (max-width: 1920px) {
+@media (min-width: 961px) {
   .main-footer {
     background-image: url(img/game_1920.jpg);
     height: 960px;
     font-size: 20px;
+    padding-top: 230px;
   }
 }
 
@@ -697,16 +668,23 @@ img {
 
 .footer-rectangle {
   display: flex;
+  flex: none;
   position: relative;
   width: 72px;
-  height: 72px;
+  height: 75px;
   border-radius: 25%;
   background-color: #51329d;
   background: linear-gradient(to top, #51329d, #764fd8);
   z-index: 2;
-  margin-top: 90px;
   margin-right: auto;
   margin-left: auto;
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .footer-rectangle {
+    width: 132px;
+    height: 135px;
+  }
 }
 
 .footer-buttons {
@@ -748,7 +726,7 @@ img {
   text-transform: uppercase;
   color: #9b8ec1;
   z-index: 2;
-  margin-left: 27px;
+  margin-left: 24px;
   margin-top: 13px;
 }
 
@@ -763,7 +741,7 @@ img {
     font-size: 1.5em;
  }
   .footer-buttons {
-    margin-bottom: 360px;
+    margin-bottom: 440px;
  }
 }
 
