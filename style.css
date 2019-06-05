@@ -150,11 +150,11 @@ body, a, h1, h2, h3, span, p, button {
 }
 
 
-
 .buttons {
   position: relative;
   z-index: 2;
   margin-top: 88px;
+  font-size: 8px;
 }
 
 .download {
@@ -170,21 +170,13 @@ body, a, h1, h2, h3, span, p, button {
   color: #ffffff;
   font-size: 1em;
   text-align: left;
-  width: 112px;
+  width: 35em;
+  height: 35px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-@media (max-width: 640px) {
-  .buttons {
-    font-size: 8px;
-  }
 
-  .download {
-    margin-right: auto;
-    margin-left: auto;
-    width: 280px;
-    height: 35px;
-  }
-}
 
 @media (min-width: 641px) {
   .buttons {
@@ -200,7 +192,7 @@ body, a, h1, h2, h3, span, p, button {
 
 @media (min-width: 641px) {
   .download {
-    width: 311px;
+    width: 22.2em;
     height: 77px;
   }
 
@@ -256,6 +248,28 @@ body, a, h1, h2, h3, span, p, button {
     align-items: flex-start;
   }
 }
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .athleths {
+    padding-top: 85px;
+  }
+
+  .players {
+    padding-top: 64px;
+  }
+}
+
+@media (min-width: 961px) {
+  .athleths {
+    padding-top: 27px;
+  }
+
+  .players {
+    padding-top: 97px;
+  }
+
+}
+
 
 .section-title {
   font-size: 5em;
@@ -317,14 +331,38 @@ body, a, h1, h2, h3, span, p, button {
   .text {
     width: 50%;
   }
+
+  .section-title-players {
+    margin-left: 185px;
+  }
 }
 
 .preview {
   position: absolute;
 }
 
+@media (min-width: 641px) and (max-width: 960px) {
+  .athlets-section {
+    left: -165px;
+  }
 
-@media (min-width: 641px) {
+  .players-section {
+    right: 0;
+  }
+}
+
+@media (min-width: 961px) {
+  .athlets-section {
+    left: 375px;
+  }
+
+  .players-section {
+    right: 125px;
+  }
+}
+
+
+@media (min-width: 641px) and (max-width: 960px) {
   .athlets-section {
     align-self: flex-start;
   }
@@ -333,19 +371,6 @@ body, a, h1, h2, h3, span, p, button {
     align-self: flex-end;
   }
 }
-
-@media (max-width: 640px) {
-  .preview {
-    align-self: center;
-    top: 70px;
-  }
-}
-
-/*@media (max-width: 640px) {*/
-/*  .section-title {*/
-/*    margin-top: 25px;*/
-/*  }*/
-/*}*/
 
 .article-title {
   font-size: 23px;
@@ -357,7 +382,7 @@ body, a, h1, h2, h3, span, p, button {
 }
 
 .number {
-  font-size: 14px;
+  font-size: 1.4em;
   font-weight: bold;
   color: #000000;
 }
@@ -369,6 +394,18 @@ body, a, h1, h2, h3, span, p, button {
   height: 4px;
   border-radius: 25%;
   margin-top: 3px;
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .number {
+    font-size: 1.3em;
+  }
+}
+
+@media (min-width: 961px) {
+  .number {
+    font-size: 1.1em;
+  }
 }
 
 .number-connection::after,
@@ -391,9 +428,14 @@ body, a, h1, h2, h3, span, p, button {
 }
 
 .text {
-  /*font-size: 15px;*/
   font-weight: normal;
   line-height: 18px;
+}
+
+@media (min-width: 641px) {
+  .text {
+    line-height: 28px;
+  }
 }
 
 .post {
@@ -413,12 +455,14 @@ body, a, h1, h2, h3, span, p, button {
 @media (min-width: 641px) and (max-width: 960px) {
   .post {
     font-size: 11px;
+    padding-left: 31px;
   }
 }
 
 @media (min-width: 961px) {
   .post {
     font-size: 13px;
+    padding-left: 192px;
   }
 }
 
@@ -469,6 +513,29 @@ body, a, h1, h2, h3, span, p, button {
   }
 }
 
+.be-active-title,
+.find-contact-title,
+.work-it-title {
+  font-size: 2.8em;
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .be-active-title,
+  .find-contact-title,
+  .work-it-title {
+    font-size: 7.2em;
+  }
+}
+
+
+@media (min-width: 961px) {
+  .be-active-title,
+  .find-contact-title,
+  .work-it-title {
+    font-size: 6.2em;
+  }
+}
+
 @media (max-width: 960px) {
   .be-active_preview,
   .find-contact_preview,
@@ -507,6 +574,10 @@ body, a, h1, h2, h3, span, p, button {
     position: relative;
     width: 50%;
   }
+
+  .find-contact {
+    padding-left: 192px;
+  }
 }
 
 @media (min-width: 641px) {
@@ -538,13 +609,18 @@ body, a, h1, h2, h3, span, p, button {
   z-index: 2;
 }
 
-@media (max-width: 640px) {
-  .rectangle {
-    width: 70px;
-    height: 70px;
-    margin-left: 20px;
-    margin-top: -58px;
-  }
+.rectangle {
+  width: 70px;
+  height: 70px;
+  margin-left: 20px;
+  margin-top: -58px;
+  font-size: 8px;
+}
+
+.number-be-active,
+.number-find-contact,
+.number-work-it {
+  font-size: 1.8em;
 }
 
 @media (min-width: 641px) and (max-width: 960px) {
@@ -553,6 +629,7 @@ body, a, h1, h2, h3, span, p, button {
     height: 116px;
     margin-left: 20px;
     margin-top: -58px;
+    font-size: 10px;
   }
 }
 
@@ -562,6 +639,7 @@ body, a, h1, h2, h3, span, p, button {
     height: 155px;
     right: -77px;
     top: calc(50% - 90px);
+    font-size: 10px;
   }
 
   .find-contact-rectangle {
@@ -603,16 +681,22 @@ body, a, h1, h2, h3, span, p, button {
 
 @media (max-width: 640px) {
   .text {
-    padding-left: 20px;
     padding-top: 20px;
-    padding-bottom: 80px;
+    line-height: 18px;
   }
 
   .text-be-active {
     padding-right: 92px;
+    padding-left: 20px;
+    padding-bottom: 78px;
   }
 
+  .text-find-contact {
+    padding-left: 20px;
+    padding-bottom: 78px;
+  }
   .text-work-it {
+    padding-left: 20px;
     padding-bottom: 68px;
   }
 }
@@ -680,6 +764,10 @@ body, a, h1, h2, h3, span, p, button {
   margin-left: auto;
 }
 
+.wrapper-footer-icon {
+  margin-top: 83px;
+}
+
 @media (min-width: 641px) and (max-width: 960px) {
   .footer-rectangle {
     width: 132px;
@@ -739,10 +827,11 @@ body, a, h1, h2, h3, span, p, button {
 @media (min-width: 961px) {
   .footer-tagline {
     font-size: 1.5em;
- }
+  }
+
   .footer-buttons {
     margin-bottom: 440px;
- }
+  }
 }
 
 
