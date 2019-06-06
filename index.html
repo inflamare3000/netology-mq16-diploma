@@ -52,10 +52,12 @@
     <picture>
       <source srcset="img/footballer_192.png" media="(max-width: 640px)">
       <source srcset="img/footballer_497.png" media="(min-width: 641px) and (max-width: 960px)">
-      <source srcset="img/footballer_566.png" media="(min-width: 961px) and (max-width: 1920px)">
+      <source srcset="img/footballer_566.png" media="(min-width: 961px)">
       <img class="preview athlets-section" src="img/footballer_192.png" alt="Футболист">
     </picture>
-    <h2 class="section-title section-title-athleths">Athleths</h2>
+    <div class="section-title-wrapper">
+      <h2 class="section-title section-title-athleths">Athleths</h2>
+    </div>
     <article class="post post-connection">
       <div class="wrapper-article-title">
         <span class="number number-connection">01</span>
@@ -92,7 +94,7 @@
     <picture>
       <source srcset="img/basketballer_302.png" media="(max-width: 640px)">
       <source srcset="img/basketballer_436.png" media="(min-width: 641px) and (max-width: 960px)">
-      <source srcset="img/basketballer_991.png" media="(min-width: 961px) and (max-width: 1920px)">
+      <source srcset="img/basketballer_991.png" media="(min-width: 961px)">
       <img class="preview players-section" src="img/basketballer_302.png" alt="Баскетболист">
     </picture>
     <h2 class="section-title section-title-players">Players</h2>
@@ -128,7 +130,7 @@
   </section>
   <section>
     <article class="be-active">
-      <div class="wrapper-be-active1">
+      <div class="wrapper-be-active">
         <picture>
           <source srcset="img/be-active_640.jpg" media="(max-width: 640px)">
           <source srcset="img/be-active_960.jpg" media="(min-width: 641px) and (max-width: 960px)">
@@ -139,7 +141,7 @@
           <span class="number number-be-active">01</span>
         </div>
       </div>
-      <div class="wrapper-be-active">
+      <div class="wrapper-be-active-text">
         <h2 class="section-title be-active-title">Be active</h2>
         <p class="text text-be-active">
           Post videos with your skills, Like and follow others to be more popular.
@@ -147,7 +149,7 @@
       </div>
     </article>
     <article class="find-contact">
-      <div class="wrapper-find-contact1">
+      <div class="wrapper-find-contact">
         <picture>
           <source srcset="img/find-contact_640.jpg" media="(max-width: 640px)">
           <source srcset="img/find-contact_960.jpg" media="(min-width: 641px) and (max-width: 960px)">
@@ -158,7 +160,7 @@
           <span class="number number-find-contact">02</span>
         </div>
       </div>
-      <div class="wrapper-find-contact">
+      <div class="wrapper-find-contact-text">
         <h2 class="section-title find-contact-title">Find contact</h2>
         <p class="text text-find-contact">
           Contact others to find right coach or athlete you are looking for.
@@ -166,7 +168,7 @@
       </div>
     </article>
     <article class="work-it">
-      <div class="wrapper-work-it1">
+      <div class="wrapper-work-it">
         <picture>
           <source srcset="img/work-it_640.jpg" media="(max-width: 640px)">
           <source srcset="img/work-it_960.jpg" media="(min-width: 641px) and (max-width: 960px)">
@@ -177,7 +179,7 @@
           <span class="number number-work-it">03</span>
         </div>
       </div>
-      <div class="wrapper-work-it">
+      <div class="wrapper-work-it-text">
         <h2 class="section-title work-it-title">Work it</h2>
         <p class="text text-work-it">
           Enjoy being a student athlete, the recruiting process can be overwhelming, we want to make
@@ -189,22 +191,26 @@
   </section>
 </main>
 <footer class="main-footer">
-  <div class="footer-rectangle">
-    <a class="footer-logo" href="#0">
-      <svg class="footer-logo-icon" viewBox="0 0 288 264">
-        <g fill-rule="evenodd">
-          <path
-              d="M115.5 36.848v190.304L253.03 132 115.5 36.848zM282.112 142.28l-172 119c-8.29 5.736-19.612-.198-19.612-10.28V13c0-10.082 11.321-16.016 19.612-10.28l172 119c7.184 4.97 7.184 15.59 0 20.56z"
-              fill-rule="nonzero"/>
-          <path
-              d="M42.5 107h107a8 8 0 1 0 0-16h-107a8 8 0 1 0 0 16zm0 70h107a8 8 0 1 0 0-16h-107a8 8 0 1 0 0 16zM8 143h168a8 8 0 1 0 0-16H8a8 8 0 1 0 0 16z"
-              fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"/>
-        </g>
-      </svg>
-    </a>
+  <div class="wrapper-footer-content">
+    <div class="footer-rectangle">
+      <a class="footer-logo" href="#0">
+        <svg class="footer-logo-icon" viewBox="0 0 288 264">
+          <g fill-rule="evenodd">
+            <path
+                d="M115.5 36.848v190.304L253.03 132 115.5 36.848zM282.112 142.28l-172 119c-8.29 5.736-19.612-.198-19.612-10.28V13c0-10.082 11.321-16.016 19.612-10.28l172 119c7.184 4.97 7.184 15.59 0 20.56z"
+                fill-rule="nonzero"/>
+            <path
+                d="M42.5 107h107a8 8 0 1 0 0-16h-107a8 8 0 1 0 0 16zm0 70h107a8 8 0 1 0 0-16h-107a8 8 0 1 0 0 16zM8 143h168a8 8 0 1 0 0-16H8a8 8 0 1 0 0 16z"
+                fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+        </svg>
+      </a>
+    </div>
+    <div class="wrapper-footer-title">
+      <h2 class="footer-title">Download app</h2>
+      <h3 class="footer-tagline">Show everyone what you can do!</h3>
+    </div>
   </div>
-  <h2 class="footer-title">Download app</h2>
-  <h3 class="footer-tagline">Show everyone what you can do!</h3>
   <div class="buttons footer-buttons">
     <button class="download appstore" type="button">
       <svg class="apple-icon" viewBox="0 0 170 170">
