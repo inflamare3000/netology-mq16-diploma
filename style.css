@@ -194,7 +194,7 @@ body, a, h1, h2, h3, span, p, button {
 @media (min-width: 641px) {
   .download {
     width: 22.2em;
-    height: 77px;
+    height: 5.5em;
   }
 
   .appstore {
@@ -268,7 +268,6 @@ body, a, h1, h2, h3, span, p, button {
   .players {
     padding-top: 97px;
   }
-
 }
 
 
@@ -317,10 +316,6 @@ body, a, h1, h2, h3, span, p, button {
     align-items: flex-end;
   }
 
-  /*.players .post,*/
-  /*.players .section-title-wrapper {*/
-  /*  align-items: flex-start;*/
-  /*}*/
 
   .wrapper-article-title, .text, .section-title {
     width: 64%;
@@ -335,6 +330,17 @@ body, a, h1, h2, h3, span, p, button {
     width: 50%;
   }
 
+  .athlets-connection,
+  .athlets-collaboration,
+  .athlets-growth {
+    padding-right: 210px;
+  }
+
+  .players-connection,
+  .players-collaboration,
+  .players-growth {
+    padding-right: 157px;
+  }
   .section-title-players {
     margin-left: 185px;
   }
@@ -373,6 +379,7 @@ body, a, h1, h2, h3, span, p, button {
 
   .players-section {
     right: 125px;
+    top: 30px;
   }
 }
 
@@ -404,7 +411,7 @@ body, a, h1, h2, h3, span, p, button {
 .number::after {
   content: "";
   display: block;
-  width: 15px;
+  width: 16px;
   height: 4px;
   border-radius: 25%;
   margin-top: 3px;
@@ -415,7 +422,8 @@ body, a, h1, h2, h3, span, p, button {
     font-size: 1.3em;
   }
   .number::after {
-    width: 17px;
+    width: 19px;
+    height: 5px;
   }
 }
 
@@ -425,7 +433,8 @@ body, a, h1, h2, h3, span, p, button {
     margin-left: 2px;
   }
   .number::after {
-    width: 19px;
+    width: 21px;
+    height: 5px;
   }
 }
 
@@ -453,6 +462,12 @@ body, a, h1, h2, h3, span, p, button {
   font-weight: normal;
   line-height: 18px;
   margin-top: 27px;
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .text {
+    letter-spacing: 1px;
+  }
 }
 
 @media (min-width: 641px) {
@@ -561,8 +576,27 @@ body, a, h1, h2, h3, span, p, button {
   .find-contact-title,
   .work-it-title {
     font-size: 7.2em;
+    margin-left: 0;
+  }
+
+  .be-active-title {
+    margin-top: 91px;
+  }
+
+  .find-contact-title {
+    margin-top: 81px;
+  }
+
+  .work-it-title {
+    margin-top: 84px;
   }
 }
+
+
+
+
+
+
 
 @media (max-width: 960px) {
   .be-active_preview,
@@ -586,26 +620,19 @@ body, a, h1, h2, h3, span, p, button {
     width: 50vw;
   }
 
-  .be-active-title {
-    margin-top: 200px;
+  .be-active-title,
+  .find-contact-title,
+  .work-it-title {
+    margin-top: 260px;
   }
-
-  .find-contact-title {
-    margin-top: 250px;
-  }
-
-
 }
-
-
-
-
 
 @media (min-width: 641px) and (max-width: 960px) {
   .wrapper-be-active-text,
   .wrapper-find-contact-text,
   .wrapper-work-it-text {
     font-size: 11px;
+    margin-left: 33px;
   }
 }
 
@@ -624,14 +651,18 @@ body, a, h1, h2, h3, span, p, button {
     position: relative;
     width: 50vw;
   }
+
+  .wrapper-work-it {
+    font-size: 0;
+  }
 }
 
 @media (min-width: 641px) {
   .text-be-active,
   .text-find-contact,
   .text-work-it {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 0;
+    /*margin-right: 20px;*/
   }
 
   .be-active_preview,
@@ -673,8 +704,8 @@ body, a, h1, h2, h3, span, p, button {
 }
 
 .rectangle {
-  width: 70px;
-  height: 70px;
+  width: 8.7em;
+  height: 8.7em;
   margin-left: 20px;
   margin-top: -58px;
   font-size: 8px;
@@ -688,8 +719,8 @@ body, a, h1, h2, h3, span, p, button {
 
 @media (min-width: 641px) and (max-width: 960px) {
   .rectangle {
-    width: 116px;
-    height: 116px;
+    width: 11.6em;
+    height: 11.6em;
     margin-left: 20px;
     margin-top: -58px;
     font-size: 10px;
@@ -698,8 +729,8 @@ body, a, h1, h2, h3, span, p, button {
 
 @media (min-width: 961px) {
   .rectangle {
-    width: 168px;
-    height: 155px;
+    width: 16.8em;
+    height: 15.5em;
     right: -77px;
     top: calc(50% - 90px);
     font-size: 10px;
@@ -819,8 +850,8 @@ body, a, h1, h2, h3, span, p, button {
   display: flex;
   flex: none;
   position: relative;
-  width: 72px;
-  height: 75px;
+  width: 9em;
+  height: 9.4em;
   border-radius: 25%;
   background-color: #51329d;
   background: linear-gradient(to top, #51329d, #764fd8);
@@ -829,24 +860,41 @@ body, a, h1, h2, h3, span, p, button {
   margin-left: auto;
 }
 
-.wrapper-footer-icon {
-  margin-top: 83px;
+@media (max-width: 640px) {
+  .wrapper-footer-icon {
+    margin-top: 60px;
+  }
 }
 
-@media (min-width: 641px) {
+
+@media (min-width: 641px) and (max-width: 960px) {
   .footer-rectangle {
-    width: 132px;
-    height: 135px;
+    width: 6.6em;
+    height: 6.9em;
+  }
+}
+
+@media (min-width: 961px) {
+  .footer-rectangle {
+    width: 6.5em;
+    height: 6.8em;
   }
 }
 
 .footer-buttons {
-  margin-bottom: 90px;
+  margin-bottom: 150px;
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .footer-buttons {
+    margin-bottom: 375px;
+  }
 }
 
 .wrapper-footer-icon {
   width: 136px;
   height: 36px;
+  margin-top: 0;
 }
 
 .footer-logo {
@@ -896,22 +944,13 @@ body, a, h1, h2, h3, span, p, button {
   }
 }
 
-@media (min-width: 641px) and (max-width: 960px) {
-  .footer-buttons {
-    margin-bottom: 315px;
-  }
-}
-
-
-
 @media (min-width: 961px) {
   .wrapper-footer-content {
     display: flex;
-
   }
 
   .wrapper-footer-title {
-    margin-left: 20px;
+    margin-left: 36px;
   }
    .footer-title {
      margin: 0;
@@ -926,10 +965,9 @@ body, a, h1, h2, h3, span, p, button {
   }
 
   .footer-buttons {
-    margin-bottom: 290px;
+    margin-bottom: 570px;
   }
 }
-
 
 .footer-icon-text {
   display: block;
@@ -938,7 +976,5 @@ body, a, h1, h2, h3, span, p, button {
   z-index: 2;
   margin-right: auto;
   margin-left: auto;
-  /*margin-top: 80px;*/
-  /*margin-bottom: 10px;*/
 }
 
