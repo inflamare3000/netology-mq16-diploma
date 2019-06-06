@@ -27,21 +27,15 @@ body, a, h1, h2, h3, span, p, button {
   margin-left: auto;
 }
 
-
 .main-header {
   position: relative;
   background-image: url(img/football_767.jpg);
   background-color: #000000;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 536px;
+  padding-top: 32px;
 }
-
-.main-header {
-  background-image: url(img/football_767.jpg);
-  min-height: 568px;
-  padding-top: 20px;
-}
-
 
 @media (min-width: 641px) and (max-width: 960px) {
   .main-header {
@@ -80,6 +74,20 @@ body, a, h1, h2, h3, span, p, button {
   margin-left: auto;
 }
 
+@media (min-width: 641px) and (max-width: 960px) {
+  .header-logo {
+    width: 206px;
+    height: 58px;
+  }
+}
+
+@media (min-width: 961px) {
+  .header-logo {
+    width: 192px;
+    height: 54px;
+  }
+}
+
 .header-logo-icon,
 .footer-logo-icon {
   display: block;
@@ -98,15 +106,23 @@ body, a, h1, h2, h3, span, p, button {
   width: 80%
 }
 
-
 .header-title-play {
   display: block;
-  text-align: right;
-}
-
-.header-title-play {
   font-weight: bold;
   margin-top: 30px;
+}
+
+@media (max-width: 640px) {
+  .header-title {
+    margin-top: 127px;
+    margin-left: 18px;
+  }
+
+  .header-title-play {
+    display: block;
+    margin-left: 44px;
+    margin-top: 30px;
+  }
 }
 
 @media (min-width: 961px) {
@@ -116,6 +132,7 @@ body, a, h1, h2, h3, span, p, button {
 
   .header-title-play {
     margin-top: 25px;
+    text-align: right;
   }
 }
 
@@ -128,7 +145,6 @@ body, a, h1, h2, h3, span, p, button {
 .header-title {
   font-size: 3.5em;
 }
-
 
 @media (min-width: 641px) and (max-width: 960px) {
   .main-header {
@@ -147,11 +163,10 @@ body, a, h1, h2, h3, span, p, button {
   }
 }
 
-
 .buttons {
   position: relative;
   z-index: 2;
-  margin-top: 88px;
+  margin-top: 77px;
   font-size: 8px;
 }
 
@@ -203,8 +218,8 @@ body, a, h1, h2, h3, span, p, button {
 }
 
 .apple-icon {
-  width: 20px;
-  height: 25px;
+  width: 26px;
+  height: 27px;
   margin-right: 11px;
   fill: #ffffff;
   flex-shrink: 0;
@@ -218,7 +233,7 @@ body, a, h1, h2, h3, span, p, button {
 }
 
 .button-description-text {
-  width: 78px;
+  width: 97px;
   text-transform: uppercase;
 }
 
@@ -270,7 +285,6 @@ body, a, h1, h2, h3, span, p, button {
   }
 }
 
-
 .section-title {
   font-size: 5em;
   font-weight: bold;
@@ -315,7 +329,6 @@ body, a, h1, h2, h3, span, p, button {
   .athleths .section-title-wrapper {
     align-items: flex-end;
   }
-
 
   .wrapper-article-title, .text, .section-title {
     width: 64%;
@@ -374,15 +387,24 @@ body, a, h1, h2, h3, span, p, button {
 
 @media (min-width: 961px) {
   .athlets-section {
-    left: calc((100vw - 961px) / 2.56);
+    left: calc((100vw - 961px) * 0.391);
   }
 
   .players-section {
-    right: 125px;
+    right: calc((100vw - 961px) * 0.636 - 485px);
     top: 30px;
   }
 }
 
+@media (min-width: 1921px) {
+  .athlets-section {
+    left: 375px;
+  }
+
+  .players-section {
+    right: 125px;
+  }
+}
 
 @media (min-width: 641px) and (max-width: 960px) {
   .athlets-section {
@@ -421,6 +443,7 @@ body, a, h1, h2, h3, span, p, button {
   .number {
     font-size: 1.3em;
   }
+
   .number::after {
     width: 19px;
     height: 5px;
@@ -432,6 +455,7 @@ body, a, h1, h2, h3, span, p, button {
     font-size: 1.1em;
     margin-left: 2px;
   }
+
   .number::after {
     width: 21px;
     height: 5px;
@@ -561,13 +585,18 @@ body, a, h1, h2, h3, span, p, button {
   .wrapper-article-title {
     font-size: 16px;
   }
+
+  .be-active-title,
+  .find-contact-title,
+  .work-it-title {
+    margin-left: 187px;
+  }
 }
 
 .be-active-title,
 .find-contact-title,
 .work-it-title {
   font-size: 2.8em;
-  margin-left: 187px;
   margin-top: 35px;
 }
 
@@ -576,7 +605,7 @@ body, a, h1, h2, h3, span, p, button {
   .find-contact-title,
   .work-it-title {
     font-size: 7.2em;
-    margin-left: 0;
+    width: 80%;
   }
 
   .be-active-title {
@@ -591,12 +620,6 @@ body, a, h1, h2, h3, span, p, button {
     margin-top: 84px;
   }
 }
-
-
-
-
-
-
 
 @media (max-width: 960px) {
   .be-active_preview,
@@ -652,6 +675,8 @@ body, a, h1, h2, h3, span, p, button {
     width: 50vw;
   }
 
+  .wrapper-be-active,
+  .wrapper-find-contact,
   .wrapper-work-it {
     font-size: 0;
   }
@@ -662,7 +687,6 @@ body, a, h1, h2, h3, span, p, button {
   .text-find-contact,
   .text-work-it {
     margin-left: 0;
-    /*margin-right: 20px;*/
   }
 
   .be-active_preview,
@@ -977,4 +1001,3 @@ body, a, h1, h2, h3, span, p, button {
   margin-right: auto;
   margin-left: auto;
 }
-
