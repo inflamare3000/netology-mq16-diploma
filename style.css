@@ -902,17 +902,30 @@ body {
   .text-be-active,
   .text-find-contact,
   .text-work-it {
-    margin-top: 9px;
+    font-size: 1.9em;
+  }
+
+  .text-be-active,
+  .text-find-contact {
+    margin-top: 23px;
     margin-left: 5px;
     margin-right: 0;
   }
 
   .text-be-active {
     margin-top: 60px;
+    width: 70%;
   }
 
   .text-find-contact {
-    padding-top: 20px;
+    width: 80%;
+  }
+
+  .text-work-it {
+    margin-top: 55px;
+    margin-left: 5px;
+    letter-spacing: 1px;
+    width: 78%;
   }
 
   .wrapper-be-active-text,
@@ -1014,15 +1027,6 @@ body {
     letter-spacing: 1.3px;
   }
 }
-
-@media (min-width: 961px) {
-  .text-work-it {
-    padding-top: 64px;
-    letter-spacing: 1px;
-    width: 60%;
-  }
-}
-
 
 .main-footer {
   display: flex;
