@@ -569,7 +569,7 @@ body {
 
 @media (min-width: 961px) {
   .number {
-    font-size: 2em;
+    font-size: 2.4em;
     margin-left: 2px;
   }
 
@@ -604,6 +604,7 @@ body {
 .number-find-contact::after,
 .number-work-it::after {
   background-color: #8f7bc8;
+  width: 24px;
 }
 
 .post-collaboration {
@@ -796,7 +797,7 @@ body {
 
   .wrapper-be-active-text,
   .wrapper-work-it-text {
-    padding-left: 6.2%;
+    padding-left: 10.2%;
   }
 }
 
@@ -837,10 +838,15 @@ body {
     font-size: 6.2em;
   }
 
+  .find-contact-title {
+    width: 78%;
+  }
+
   .be-active_preview,
   .find-contact_preview,
   .work-it_preview {
     width: 50vw;
+    min-height: 100%;
   }
 }
 
