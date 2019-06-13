@@ -616,6 +616,14 @@ body {
   color: #ffffff;
 }
 
+.players .post-growth {
+  background-color: #090c35;
+}
+
+.players .number-growth {
+  color: #5e42b0;
+}
+
 @media (max-width: 640px) {
   .post-connection {
     background-color: #fafafa;
